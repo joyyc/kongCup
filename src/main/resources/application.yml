@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: test
+
+---
+spring:
+  profiles: dev
+msg:
+  author: "海明威"
+  text: "一个人并不是生来要被打败的，你尽可以把他消灭掉，可就是打不败他。"
+  photoUrl: "https://cdn.pixabay.com/photo/2017/05/15/12/47/trimmers-2314775__480.jpg"
+robot: "https://oapi.dingtalk
+.com/robot/send?access_token=f213406446bebc7c8f8c63ae2dcca58c0c6369d9d35deb714308152be9817510"
+
+---
+spring:
+  profiles: test
+msg:
+  author: "苏尘 《欣然读书吧》"
+  text: "越是艰难处，越是修心时。"
+  photoUrl: "https://cdn.pixabay.com/photo/2017/06/23/19/16/woman-2435605_1280.jpg"
+robot: "https://oapi.dingtalk
+.com/robot/send?access_token=2fdb7810a00a40928d7aa74705c4752ddc425ce579140a01f844bd01eb279ef9"
