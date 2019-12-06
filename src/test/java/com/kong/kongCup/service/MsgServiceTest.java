@@ -25,4 +25,10 @@ class MsgServiceTest {
         MsgVO msgVO = msgService.getMsg();
         assertEquals(msgVO.getAuthor(), "海明威");
     }
+
+    @Test
+    void getMsgShouldFail2() {
+        MsgVO msgVO = msgService.getMsg();
+        assertEquals(msgVO.getAuthor(), "刀尔登");
+    }
 }
