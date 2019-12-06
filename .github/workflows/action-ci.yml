@@ -15,3 +15,8 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    - name: command testing action
+      uses: MeilCli/test-command-action@v1
+      with:  
+        command: 
+          mvn clean test
