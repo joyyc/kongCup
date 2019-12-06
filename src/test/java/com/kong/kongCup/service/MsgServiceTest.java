@@ -19,4 +19,10 @@ class MsgServiceTest {
         MsgVO msgVO = msgService.getMsg();
         Assert.notNull(msgVO);
     }
+
+    @Test
+    void getMsgShouldFail() {
+        MsgVO msgVO = msgService.getMsg();
+        assertEquals(msgVO.getAuthor(), "海明威");
+    }
 }
